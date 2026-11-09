@@ -1,0 +1,41 @@
+name: Build Android APK
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+
+      - name: Validate Gradle wrapper
+        uses: gradle/actions/wrapper-validation@v6
+
+      - name: Build continuous APK
+        run: ./gradlew assembleContinuous --stacktrace -DskipFormatKtlint
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v7
+        with:
+          name: DevelPipe-APK
+          path: app/build/outputs/apk/continuous/*.apk
+          if-no-files-found: error
+          retention-days: 14
