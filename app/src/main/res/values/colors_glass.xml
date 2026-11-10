@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="glass_navy">#10213B</color>
+    <color name="glass_navy_light">#17345A</color>
+    <color name="glass_navy_dark">#0B1018</color>
+    <color name="glass_rim">#80FFFFFF</color>
+    <color name="glass_item_ripple">#33FFFFFF</color>
+    <color name="glass_drawer_text">#F3F6FB</color>
+    <color name="glass_drawer_secondary">#B7C7DA</color>
+</resources>

@@ -5,6 +5,11 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:background="?android:attr/windowBackground"
+    android:background="@drawable/glass_drawer_surface"
     android:orientation="vertical"
-    app:headerLayout="@layout/drawer_header" />
+    app:headerLayout="@layout/drawer_header"
+    app:itemBackground="@drawable/glass_navigation_item"
+    app:itemHorizontalPadding="20dp"
+    app:itemIconPadding="18dp"
+    app:itemIconTint="@color/glass_drawer_tint"
+    app:itemTextColor="@color/glass_drawer_tint" />
