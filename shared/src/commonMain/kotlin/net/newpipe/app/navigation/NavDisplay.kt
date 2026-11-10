@@ -74,10 +74,10 @@ fun NavDisplay(
 }
 
 /** Screens glide in with a soft spring (fluid at any refresh rate, tiny settle at the end). */
-private fun pageSlideSpec() = spring(
+private fun pageSlideSpec() = spring<IntOffset>(
     dampingRatio = AppMotion.SMOOTH_DAMPING,
     stiffness = AppMotion.SMOOTH_STIFFNESS,
-    visibilityThreshold = IntOffset.VisibilityThreshold
+    visibilityThreshold = IntOffset(1, 1)
 )
 
 private fun pageFadeSpec() = spring<Float>(
