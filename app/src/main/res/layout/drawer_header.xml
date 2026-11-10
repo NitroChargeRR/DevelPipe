@@ -79,7 +79,7 @@
                 android:maxLines="1"
                 android:textColor="@color/glass_drawer_text"
                 android:textSize="14sp"
-                android:textStyle="medium"
+                android:textStyle="normal"
                 tools:text="YouTube" />
 
             <ImageView
