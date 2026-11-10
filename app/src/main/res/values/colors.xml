@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="contrastColor">@color/black</color>
-    <color name="defaultIconTint">@color/black</color>
+    <color name="contrastColor">@color/white</color>
+    <color name="defaultIconTint">@color/white</color>
 
-    <color name="ic_launcher_background">#CD201F</color>
+    <color name="ic_launcher_background">#10213B</color>
 
-    <color name="placeholder_background">#999999</color>
-    <color name="placeholder_foreground">#6C6C6C</color>
+    <color name="placeholder_background">#718096</color>
+    <color name="placeholder_foreground">#334155</color>
 
     <!-- Light Theme -->
-    <color name="light_background_color">#EEEEEE</color>
-    <color name="light_dialog_background_color">#EEEEEE</color>
-    <color name="light_settings_accent_color">#e53935</color>
-    <color name="light_separator_color">#32000000</color>
-    <color name="light_ripple_color">#48868686</color>
-    <color name="light_selected_color">#2a868686</color>
-    <color name="light_contrast_background_color">#1fa6a6a6</color>
-    <color name="light_shadow_start_color">#5a000000</color>
-    <color name="light_license_background_color">#ffffff</color>
-    <color name="light_license_text_color">#212121</color>
-    <color name="light_card_item_background_color">#F8F8F8</color>
-    <color name="light_card_item_contrast_color">#E9E9E9</color>
-    <color name="light_border_color">#33000000</color>
+    <color name="light_background_color">#F3F5F8</color>
+    <color name="light_dialog_background_color">#F3F5F8</color>
+    <color name="light_settings_accent_color">#17345A</color>
+    <color name="light_separator_color">#260F1B2B</color>
+    <color name="light_ripple_color">#487D9BC4</color>
+    <color name="light_selected_color">#247D9BC4</color>
+    <color name="light_contrast_background_color">#1F7D9BC4</color>
+    <color name="light_shadow_start_color">#4D000000</color>
+    <color name="light_license_background_color">#FFFFFF</color>
+    <color name="light_license_text_color">#171C24</color>
+    <color name="light_card_item_background_color">#F8FAFC</color>
+    <color name="light_card_item_contrast_color">#E8EDF3</color>
+    <color name="light_border_color">#260F1B2B</color>
 
     <!-- Dark Theme -->
-    <color name="dark_background_color">#222222</color>
-    <color name="dark_dialog_background_color">#424242</color>
-    <color name="dark_settings_accent_color">#ff5252</color>
-    <color name="dark_separator_color">#0affffff</color>
-    <color name="dark_ripple_color">#48ffffff</color>
-    <color name="dark_selected_color">#2affffff</color>
-    <color name="dark_contrast_background_color">#1f717171</color>
+    <color name="dark_background_color">#0B1018</color>
+    <color name="dark_dialog_background_color">#1C2736</color>
+    <color name="dark_settings_accent_color">#AFC9EC</color>
+    <color name="dark_separator_color">#18FFFFFF</color>
+    <color name="dark_ripple_color">#48FFFFFF</color>
+    <color name="dark_selected_color">#24FFFFFF</color>
+    <color name="dark_contrast_background_color">#263A485A</color>
     <color name="dark_shadow_start_color">#82000000</color>
-    <color name="dark_license_background_color">#424242</color>
-    <color name="dark_license_text_color">#ffffff</color>
-    <color name="dark_queue_background_color">#af000000</color>
-    <color name="dark_card_item_background_color">#313131</color>
-    <color name="dark_card_item_contrast_color">#474747</color>
+    <color name="dark_license_background_color">#1C2736</color>
+    <color name="dark_license_text_color">#E4EAF2</color>
+    <color name="dark_queue_background_color">#AF080C12</color>
+    <color name="dark_card_item_background_color">#151E2B</color>
+    <color name="dark_card_item_contrast_color">#263345</color>
     <color name="dark_border_color">#33FFFFFF</color>
 
     <!-- Black Theme -->
     <color name="black_background_color">#000000</color>
     <color name="black_settings_accent_color">@color/dark_settings_accent_color</color>
-    <color name="black_separator_color">#1effffff</color>
+    <color name="black_separator_color">#1EFFFFFF</color>
     <color name="black_contrast_background_color">#23454545</color>
-    <color name="black_card_item_background_color">#0F0F0F</color>
-    <color name="black_card_item_contrast_color">#202020</color>
+    <color name="black_card_item_background_color">#0F141D</color>
+    <color name="black_card_item_contrast_color">#202B3A</color>
     <color name="black_border_color">#25FFFFFF</color>
 
     <!-- Miscellaneous -->
     <color name="queue_background_color">@color/dark_queue_background_color</color>
     <color name="drawer_header_font_color">#F2FFFFFF</color>
-    <color name="duration_background_color">#aa000000</color>
-    <color name="live_duration_background_color">#c8E53935</color>
-    <color name="playlist_stream_count_background_color">#e6000000</color>
+    <color name="duration_background_color">#AA000000</color>
+    <color name="live_duration_background_color">#C817345A</color>
+    <color name="playlist_stream_count_background_color">#E6000000</color>
     <color name="duration_text_color">#EEFFFFFF</color>
     <color name="video_overlay_color">#64000000</color>
 
-    <color name="subscribe_text_color">#fff</color>
-    <color name="subscribed_background_color">#d6d6d6</color>
-    <color name="subscribed_text_color">#717171</color>
+    <color name="subscribe_text_color">#FFFFFF</color>
+    <color name="subscribed_background_color">#D6DCE5</color>
+    <color name="subscribed_text_color">#334155</color>
 
     <color name="transparent_background_color">#00000000</color>
     <color name="selected_background_color">#96717171</color>
@@ -71,10 +71,10 @@
     <!-- GigaGet download Theme colors -->
     <color name="audio_left_to_load_color">#555555</color>
     <color name="audio_already_load_color">#000000</color>
-    <color name="video_left_to_load_color">#CD5656</color>
-    <color name="video_already_load_color">#BC211D</color>
-    <color name="subtitle_left_to_load_color">#008ea4</color>
-    <color name="subtitle_already_load_color">#005a71</color>
+    <color name="video_left_to_load_color">#17345A</color>
+    <color name="video_already_load_color">#29466D</color>
+    <color name="subtitle_left_to_load_color">#008EA4</color>
+    <color name="subtitle_already_load_color">#005A71</color>
 
     <!-- GigaGet Component colors -->
     <color name="white">#FFFFFF</color>
@@ -82,6 +82,6 @@
 
     <color name="gray">#616161</color>
 
-    <color name="black">#000</color>
+    <color name="black">#000000</color>
 
 </resources>

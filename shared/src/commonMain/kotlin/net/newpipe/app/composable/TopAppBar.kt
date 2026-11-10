@@ -5,9 +5,11 @@
 
 package net.newpipe.app.composable
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarColors
@@ -18,7 +20,10 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import net.newpipe.app.BuildConfig
 import net.newpipe.app.preview.ThemePreviewProvider
+import net.newpipe.app.theme.GlassDefaults
+import net.newpipe.app.theme.appShapes
 import net.newpipe.app.theme.currentServiceTopAppBarColors
+import net.newpipe.app.theme.glassPanel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.ic_arrow_back
 import newpipe.shared.generated.resources.navigate_back
@@ -43,12 +48,21 @@ fun TopAppBar(
     actions: @Composable (RowScope.() -> Unit) = {}
 ) {
     TopAppBar(
-        modifier = modifier,
+        modifier = modifier.glassPanel(appShapes.large),
         colors = colors,
         title = { if (title != null) Text(text = title) },
         navigationIcon = {
             if (onNavigateUp != null) {
-                IconButton(onClick = onNavigateUp) {
+                IconButton(
+                    modifier = Modifier
+                        .background(
+                            color = MaterialTheme.colorScheme.surfaceContainerHigh
+                                .copy(alpha = GlassDefaults.CONTAINER_ALPHA),
+                            shape = appShapes.small
+                        )
+                        .glassPanel(appShapes.small),
+                    onClick = onNavigateUp
+                ) {
                     Icon(
                         painter = navigationIcon,
                         contentDescription = stringResource(Res.string.navigate_back)

@@ -18,53 +18,56 @@ import com.russhwolf.settings.Settings
 import net.newpipe.app.Constants.KEY_STREAMING_SERVICE
 import org.koin.compose.koinInject
 
+private val lightServiceContainer = Color(0xFF17345A)
+private val darkServiceContainer = Color(0xFF29466D)
+
 val youTubeLightScheme = lightColorScheme(
-    primaryContainer = Color(0xFFE53935),
+    primaryContainer = lightServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val youTubeDarkScheme = darkColorScheme(
-    primaryContainer = Color(0xFF992722),
+    primaryContainer = darkServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val soundCloudLightScheme = lightColorScheme(
-    primaryContainer = Color(0xFFF57C00),
+    primaryContainer = lightServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val soundCloudDarkScheme = darkColorScheme(
-    primaryContainer = Color(0xFFA35300),
+    primaryContainer = darkServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val mediaCCCLightScheme = lightColorScheme(
-    primaryContainer = Color(0xFF9E9E9E),
+    primaryContainer = lightServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val mediaCCCDarkScheme = darkColorScheme(
-    primaryContainer = Color(0xFF878787),
+    primaryContainer = darkServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val peerTubeLightScheme = lightColorScheme(
-    primaryContainer = Color(0xFFFF6F00),
+    primaryContainer = lightServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val peerTubeDarkScheme = darkColorScheme(
-    primaryContainer = Color(0xFFA34700),
+    primaryContainer = darkServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val bandCampLightScheme = lightColorScheme(
-    primaryContainer = Color(0xFF17A0C4),
+    primaryContainer = lightServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
 val bandCampDarkScheme = darkColorScheme(
-    primaryContainer = Color(0xFF1383A1),
+    primaryContainer = darkServiceContainer,
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 
@@ -153,8 +156,8 @@ fun currentServiceTopAppBarColors(
     serviceScheme: ColorScheme = currentServiceScheme()
 ): TopAppBarColors {
     return TopAppBarDefaults.topAppBarColors(
-        containerColor = serviceScheme.primaryContainer,
-        scrolledContainerColor = serviceScheme.primaryContainer,
+        containerColor = serviceScheme.primaryContainer.copy(alpha = 0.78f),
+        scrolledContainerColor = serviceScheme.primaryContainer.copy(alpha = 0.90f),
         navigationIconContentColor = serviceScheme.onPrimaryContainer,
         titleContentColor = serviceScheme.onPrimaryContainer,
         subtitleContentColor = serviceScheme.onPrimaryContainer,
