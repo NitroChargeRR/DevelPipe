@@ -65,9 +65,6 @@
     <color name="transparent_background_color">#00000000</color>
     <color name="selected_background_color">#96717171</color>
 
-    <!-- Glass styling -->
-    <color name="glass_rim">#A6C7E7</color>
-
     <!-- GigaGet theme -->
     <color name="bluegray">#607D8B</color>
 

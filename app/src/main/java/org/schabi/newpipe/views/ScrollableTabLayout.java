@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 
 import com.google.android.material.tabs.TabLayout;
 
+import org.schabi.newpipe.R;
+
 /**
  * A TabLayout that is scrollable when tabs exceed its width and adopts the glass pill style.
  * Hides when there are less than 2 tabs.
@@ -114,6 +116,6 @@ public class ScrollableTabLayout extends TabLayout {
             }
         }
         setMode(contentWidth > layoutWidth ? MODE_SCROLLABLE : MODE_FIXED);
-        setTabGravity(contentWidth > layoutWidth ? GRAVITY_CENTER : GRAVITY_CENTER);
+        setTabGravity(GRAVITY_CENTER);
     }
 }
